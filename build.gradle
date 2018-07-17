@@ -27,7 +27,7 @@ sourceSets {
     }
     test {
         scala {
-            srcDirs = ['src/main/test/scala']
+            srcDirs = ['src/test/scala']
         }
     }
 }
