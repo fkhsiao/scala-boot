@@ -19,6 +19,19 @@ group = 'com.freetalk.scala-boot'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala']
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['src/main/test/scala']
+        }
+    }
+}
+
 repositories {
     mavenCentral()
     mavenLocal()
@@ -29,11 +42,12 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter')
     compile('org.springframework.boot:spring-boot-starter-hateoas')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile 'org.scalatest:scalatest_2.11:3.0.0'
 // Add basics
     compile 'org.slf4j:slf4j-api:1.7.5'
-    testCompile "junit:junit:4.11"
+    testCompile "junit:junit:4.12"
 // Add for Scala
-    compile "org.scala-lang:scala-library:2.10.4"
+    compile "org.scala-lang:scala-library:2.11.12"
     compile "org.scala-lang:scala-compiler:2.10.4"
 }
 // Add for Scala?
