@@ -43,6 +43,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-hateoas')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile 'org.scalatest:scalatest_2.11:3.0.0'
+// Declare Zinc compiler
+    zinc 'com.typesafe.zinc:zinc:0.3.9'
 // Add basics
     compile 'org.slf4j:slf4j-api:1.7.5'
     testCompile "junit:junit:4.12"
